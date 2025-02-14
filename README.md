@@ -2,8 +2,11 @@
 
 #### Step 1: Install the Requirements
 
+NOTE: `huggingface_hub<0.26.0` must be added to the `requriements.txt` because of a bug in the current version of the library. [See the full issue]( https://github.com/huggingface/huggingface-inference-toolkit/issues/92)
+
 ```
-pip install -r requirements.txt
+uv venv
+uv pip install -r requirements.txt
 ```
 
 #### Step 2: Pull the models (if you already have models loaded in Ollama, then not required)
